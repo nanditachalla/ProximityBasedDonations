@@ -32,6 +32,7 @@ function Profile() {
         </div>
         <div className="ProfHead">
           <Link
+          to={`/DelAcc/${email}`}
             style={{
               color: "white",
               textDecoration: "none",
