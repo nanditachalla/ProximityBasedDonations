@@ -20,7 +20,7 @@ function DelAcc1(props) {
     <div>
       <div className="Ctab" style={{ marginBottom: "20px" }}>
         <Link
-          to={`/Profile/${email}`}
+          to={`/Profile1/${email}`}
           style={{ padding: "5px", color: "white", textDecoration: "none" }}
         >
           Back
