@@ -79,5 +79,13 @@ router.post("/login", async (req, res) => {
     res.json("YOU LOGGED IN!!!");
   });
 });
+router.delete("/del/:email", async (req, res) => {
+  const email = req.params.email;
+  Acceptor.destroy({
+    where: {
+      email: email,
+    },
+  });
+});
 
 module.exports = router;
