@@ -18,6 +18,8 @@ import IndPost2 from "./Pages/IndPost2";
 import Profile1 from "./Pages/Profile1";
 import ContactUs1 from "./Pages/ContactUs1";
 import About1 from "./Pages/About1";
+import DelAcc1 from "./Pages/DelAcc1";
+import DelAcc from "./Pages/DelAcc";
 function App() {
   return (
     <div className="App">
@@ -39,6 +41,8 @@ function App() {
           <Route path="/Profile1/:email" exact component={Profile1} />
           <Route path="/ContactUs1/:email" exact component={ContactUs1} />
           <Route path="/About1/:email" exact component={About1} />
+             <Route path="/DelAcc1/:email" exact component={DelAcc1} />
+          <Route path="/DelAcc/:email" exact component={DelAcc} />
         </Switch>
       </Router>
     </div>
